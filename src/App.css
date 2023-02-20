@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+html{
+  box-sizing: border-box;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+body{
   align-items: center;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,146,255,1) 100%);;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: inherit;
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper{
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255,255,255,0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35,35,35,0.1);
+  color: #232323;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background: rgba(255,255,255,0.30);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  flex-basis: 400px;
+  height: 540px;
+  width: 400px;
+  padding: 20px 35px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.screen{
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255,255,255,0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35,35,35,0.1);
+  color: #232323;
+  font-size: 35px;
+}
+
+.calc-buttons-row{
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
+}
+
+.calc-button{
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 225, 0.75);
+  border: 1px solid rgba(255,255,255,0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35,35,35,0.1);
+  flex-basis: 20%;
+  font-size: 24px;
+  height: 65px;
+}
+
+.calc-button:last-child{
+  background: greenyellow;
+}
+
+.calc-button:last-child:hover{
+  background-color: inherit;
+}
+
+.calc-button:hover{
+  background-color: inherit;
+}
+
+.double{
+  flex-basis: 47%;
 }
