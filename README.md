@@ -1,2 +1,1 @@
-cd ./calculator-react/
-npm start
+## Simple Calculator in React
